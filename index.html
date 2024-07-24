@@ -52,18 +52,36 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>Close</button>
+          <nav class="mobile-menu-nav">Navigation</nav>
+          <address>Address</address>
+          <div>Soc link</div>
+        </div>
       </div>
     </header>
     <main>
-      <section>
+      <section class="hidden">
         <button class="hero-btn" type="button" data-modal-open>
           Order Service
         </button>
       </section>
+      <section class="hidden">Section benefits</section>
+      <section class="hidden">Section Our Team</section>
+      <section class="hidden">Section Our Portfolio</section>
     </main>
-    <footer></footer>
+    <footer class="hidden">Footer</footer>
 
-    <div class="backdrop" data-modal>
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           close
@@ -72,5 +90,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
